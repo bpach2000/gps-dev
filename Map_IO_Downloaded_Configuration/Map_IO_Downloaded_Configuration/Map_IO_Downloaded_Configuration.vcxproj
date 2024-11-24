@@ -127,14 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\OSM_Parser.cpp" />
-    <ClCompile Include="Map_IO_Downloaded_Configuration.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\include\OSM_Parser.h" />
+    <ClCompile Include="src\Map_IO_Downloaded_Configuration.cpp" />
+    <ClCompile Include="src\OSM_Parser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\OpenStreetMapData\map.osm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\OSM_Parser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
