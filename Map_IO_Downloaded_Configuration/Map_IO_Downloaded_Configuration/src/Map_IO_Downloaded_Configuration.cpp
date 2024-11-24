@@ -2,10 +2,42 @@
 //
 
 #include <iostream>
+#include <map>
+
+#include "../include/OSM_Parser.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    // Path to the .osm file
+    OSM_Parser parser("C:/gps-dev/Map_IO_Downloaded_Configuration/Map_IO_Downloaded_Configuration/ResourceFile/map.osm");
+
+    // Parse the file
+    if (!parser.parseFile()) {
+        std::cerr << "Error parsing .osm file!" << std::endl;
+        return 1;
+    }
+
+    // Access parsed data
+    const auto& nodes = parser.getNodes();
+    const auto& ways = parser.getWays();
+
+    // Print node data
+    std::cout << "Nodes:" << std::endl;
+    for (const auto& [id, node] : nodes) {
+        std::cout << "ID: " << id << ", Lat: " << node.lat << ", Lon: " << node.lon << std::endl;
+    }
+
+    // Print way data
+    std::cout << "\nWays:" << std::endl;
+    for (const auto& way : ways) {
+        std::cout << "Way with nodes: ";
+        for (const auto& ref : way.nodeRefs) {
+            std::cout << ref << " ";
+        }
+        std::cout << std::endl;
+    }
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

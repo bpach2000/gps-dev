@@ -23,13 +23,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\OpenStreetMapData\map.osm">
-      <Filter>Resource Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="include\OSM_Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourceFile\map.osm">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
