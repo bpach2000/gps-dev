@@ -6,6 +6,7 @@
       ],
       "name": "x86-Debug",
       "includePath": [
+        "${workspaceRoot}\\..\\Users\\Jason Parkinson\\vcpkg\\packages\\tinyxml2_x64-windows\\include",
         "${env.INCLUDE}",
         "${workspaceRoot}\\**"
       ],
