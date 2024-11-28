@@ -1,4 +1,7 @@
-﻿  Map_IO_Downloaded_Configuration.cpp
+﻿  The vcpkg manifest was disabled, but we found a manifest file in C:\gps-dev\. You may want to enable vcpkg manifests in your properties page or pass /p:VcpkgEnableManifest=true to the msbuild invocation.
+  Map_IO_Downloaded_Configuration.cpp
+  OSM_Parser.cpp
+  Generating Code...
   Map_IO_Downloaded_Configuration.vcxproj -> C:\gps-dev\Map_IO_Downloaded_Configuration\x64\Debug\Map_IO_Downloaded_Configuration.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

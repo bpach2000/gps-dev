@@ -128,11 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MapRender.cpp" />
     <ClCompile Include="src\Map_IO_Downloaded_Configuration.cpp" />
     <ClCompile Include="src\OSM_Parser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\OSM_Parser.h" />
+    <ClInclude Include="MapRender.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceFile\map.osm" />

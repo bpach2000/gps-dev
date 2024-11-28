@@ -21,6 +21,7 @@ private:
     std::string filePath; // Path to the .osm file
     std::unordered_map<std::string, Node> nodes; // Map of nodes (id -> Node)
     std::vector<Way> ways; // List of ways
+
 public:
     OSM_Parser(const std::string& filePath); // Constructor with file path
     ~OSM_Parser(); // Destructor

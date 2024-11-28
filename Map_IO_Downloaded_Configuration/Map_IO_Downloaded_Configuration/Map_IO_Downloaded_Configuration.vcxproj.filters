@@ -21,9 +21,15 @@
     <ClCompile Include="src\OSM_Parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MapRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\OSM_Parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
