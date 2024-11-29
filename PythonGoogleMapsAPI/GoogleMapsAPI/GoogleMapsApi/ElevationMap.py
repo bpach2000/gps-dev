@@ -3,17 +3,13 @@ import requests
 
 class ElevationMap(object):
     
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    def __init__(self):
+        pass
 
 
-    def make_url(params):
+    def __make_url(params):
         # Make the request to Google Maps API for the static map
         url = "https://maps.googleapis.com/maps/api/elevation/json" + "?locations=39.7391536%2C-104.9847034&key=YOUR_API_KEY"
-      #   https://maps.googleapis.com/maps/api/elevation/json
-      # ?locations=39.7391536%2C-104.9847034
-      # &key=YOUR_API_KEY
         return url
 
     def download_static_map(client, size, center=None, zoom=None, scale=None,
@@ -35,7 +31,7 @@ class ElevationMap(object):
         }
     
         # Get url
-        url = make_url(params)
+        url = self.__make_url(params)
 
         response = requests.get(url, params=params)
     

@@ -21,7 +21,7 @@
     <ClCompile Include="src\OSM_Parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MapRender.cpp">
+    <ClCompile Include="WifiManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,7 +29,7 @@
     <ClInclude Include="include\OSM_Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MapRender.h">
+    <ClInclude Include="WifiManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
