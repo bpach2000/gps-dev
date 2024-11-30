@@ -6,7 +6,6 @@
  * this file. If not, please write to: jasonparkinson331@gmail.com
  */
 
-#pragma once
 
 #include "../include/OSM_Parser.h"
 
