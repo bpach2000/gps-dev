@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="MapTilesAPI.pyw" />
     <Compile Include="ElevationMap.py" />
     <Compile Include="StaticGoogleMapsApi.py" />
   </ItemGroup>
