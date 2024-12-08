@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>23252f33-cc8e-4075-b08f-8d89f9e66a0f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StaticGoogleMapsApi.py</StartupFile>
+    <StartupFile>StaticMapsApi.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,9 +21,14 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MapTilesAPI.pyw" />
     <Compile Include="ElevationMap.py" />
-    <Compile Include="StaticGoogleMapsApi.py" />
+    <Compile Include="MainGoogleMapsApi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MapTilesApi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StaticMapsApi.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

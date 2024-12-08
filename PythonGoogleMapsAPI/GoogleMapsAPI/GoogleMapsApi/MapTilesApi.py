@@ -2,7 +2,7 @@ import googlemaps
 import requests
 
 
-class MapTilesAPI(object):
+class MapTilesApi(object):
     pass
     
     def __init__(self, Lat, Long, Session_URL, Tiles_URL, API_Key, token):
@@ -13,11 +13,11 @@ class MapTilesAPI(object):
         self.API_Key = "AIzaSyAHFnNvs2uAGYs7ur-uETNR-6Kle2VFIIo"
         self.token = token
 
-    def __setLat__(self):
-        print("HellO")
+    def __setLat__(self, lat):
+        self.Lat = lat
 
-    def __setLong__(self):
-        print("HellO")
+    def __setLong__(self, long):
+        self.Long = long
     
     def __getLat__(self):
         return self.Lat
@@ -66,7 +66,4 @@ class MapTilesAPI(object):
         else:
             print( self.Tiles_URL )
             print(f"Error: {response.status_code}")
-
-
-
 
