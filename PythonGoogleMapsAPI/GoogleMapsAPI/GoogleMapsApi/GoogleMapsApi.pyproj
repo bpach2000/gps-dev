@@ -4,13 +4,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>23252f33-cc8e-4075-b08f-8d89f9e66a0f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>StaticMapsApi.py</StartupFile>
+    <StartupFile>src\MainGoogleMapsApi.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>GoogleMapsApi</Name>
     <RootNamespace>GoogleMapsApi</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>True</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,14 +24,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ElevationMap.py" />
-    <Compile Include="MainGoogleMapsApi.py">
+    <Compile Include="GoogleTests\ElevationUnitTest.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MapTilesApi.py">
+    <Compile Include="src\ElevationMap.py" />
+    <Compile Include="src\MainGoogleMapsApi.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="StaticMapsApi.py" />
+    <Compile Include="src\MapTilesApi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\StaticMapsApi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GoogleTests\" />
+    <Folder Include="src\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
