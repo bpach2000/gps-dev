@@ -1,4 +1,11 @@
-#pragma once
+/* Copyright (C) Luna - All Rights Reserved
+ * You may use, distribute and modify this code under the
+ * terms of the current license, which should be made available soon
+ *
+ * You should have received a copy of the Luna license with
+ * this file. If not, please write to: jasonparkinson331@gmail.com
+ */
+
 
 #include "../include/OSM_Parser.h"
 

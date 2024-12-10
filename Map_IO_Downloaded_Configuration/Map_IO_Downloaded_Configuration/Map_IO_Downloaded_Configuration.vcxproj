@@ -128,11 +128,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ParsePathData.cpp" />
+    <ClCompile Include="WifiManager.cpp" />
     <ClCompile Include="src\Map_IO_Downloaded_Configuration.cpp" />
     <ClCompile Include="src\OSM_Parser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\OSM_Parser.h" />
+    <ClInclude Include="ParsePathData.h" />
+    <ClInclude Include="WifiManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceFile\map.osm" />

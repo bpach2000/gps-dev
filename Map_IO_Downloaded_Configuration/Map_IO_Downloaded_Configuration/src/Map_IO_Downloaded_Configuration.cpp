@@ -9,7 +9,7 @@
 int main()
 {
     // Path to the .osm file
-    OSM_Parser parser("C:/gps-dev/Map_IO_Downloaded_Configuration/Map_IO_Downloaded_Configuration/ResourceFile/map.osm");
+    OSM_Parser parser("/mnt/c/gps-dev/Map_IO_Downloaded_Configuration/Map_IO_Downloaded_Configuration/ResourceFile/map.osm");
 
     // Parse the file
     if (!parser.parseFile()) {
