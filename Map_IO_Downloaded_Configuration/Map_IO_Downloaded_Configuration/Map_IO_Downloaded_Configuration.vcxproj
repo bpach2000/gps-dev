@@ -70,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\include;</IncludePath>
+    <SourcePath>$(ProjectDir)\src;</SourcePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -128,15 +132,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ParsePathData.cpp" />
-    <ClCompile Include="WifiManager.cpp" />
     <ClCompile Include="src\Map_IO_Downloaded_Configuration.cpp" />
     <ClCompile Include="src\OSM_Parser.cpp" />
+    <ClCompile Include="src\ParsePathData.cpp" />
+    <ClCompile Include="src\WifiManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\OSM_Parser.h" />
-    <ClInclude Include="ParsePathData.h" />
-    <ClInclude Include="WifiManager.h" />
+    <ClInclude Include="include\ParsePathData.h" />
+    <ClInclude Include="include\WifiManager.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ResourceFile\map.osm" />

@@ -21,10 +21,10 @@
     <ClCompile Include="src\OSM_Parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="WifiManager.cpp">
+    <ClCompile Include="src\ParsePathData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ParsePathData.cpp">
+    <ClCompile Include="src\WifiManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,10 @@
     <ClInclude Include="include\OSM_Parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="WifiManager.h">
+    <ClInclude Include="include\ParsePathData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ParsePathData.h">
+    <ClInclude Include="include\WifiManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
