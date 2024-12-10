@@ -24,16 +24,28 @@
 
 #pragma once
 
-using namespace tinyxml2;
+#include <glew.h>
+#include <glfw3.h>
+#include <iostream>
 
-class ParsePathData {
-
-
+class AppMainGui {
 private:
-
 public:
+    int screenWidth, screenHeight;
+    std::string windowTitle;
+    GLFWwindow* window;
 
-	ParsePathData();
-	void ParseGpxFile(const char* filename);
+
+    AppMainGui(int width, int height, const std::string& title);
+
+    bool initialize();
+
+    void run();
+
+    void processInput();
+
+    void render();
+
+    void cleanup();
 
 };
